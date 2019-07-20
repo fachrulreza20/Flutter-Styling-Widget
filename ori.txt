@@ -1,0 +1,39 @@
+import "package:flutter/material.dart";
+
+void main() {
+  runApp(new MaterialApp(
+    home: new HalamanSatu(),
+    title: "Title Aplikasi Reza",
+  ));
+}
+
+class HalamanSatu extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+        backgroundColor: Colors.yellow[100],
+        appBar: new AppBar(
+          backgroundColor: Colors.red,
+          leading: new Icon(Icons.home),
+          title: new Center(
+            child: new Text("Aplikasi Reza")),
+          actions: <Widget>[Icon(Icons.search)],
+        ),
+        body:
+        new Center(child:
+        new Container(
+            // id=kotak
+            color: Colors.blue[400],
+            width: 200,
+            height: 100,
+
+            child: new Center(
+              child: new Text("Center kan",
+                  style: new TextStyle(
+                    color: Colors.white,
+                    fontFamily: "Comic Sans",
+                    fontSize: 20.0)),
+            )))
+        );
+  }
+}
